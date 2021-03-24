@@ -28,20 +28,6 @@ chmod 755 /usr/local/share/zsh/site-functions
 ## source file to get jump working
 source ~/.zshrc
 
-## install visual studio code
-echo "Installing VS Code.."
-brew cask install visual-studio-code
-## this might ask you for your password
-code --version
-echo "VS Code successfully installed"
-
-## install anaconda
-echo "Installing anaconda.."
-brew cask install anaconda
-echo "export PATH=/usr/local/anaconda3/bin:"$PATH"" >> ~/.zshrc
-echo "anaconda installed succesfully"
-
-
 ## install iterm2
 echo "Installing iTerm2.."
 cd ~/Downloads
@@ -53,11 +39,11 @@ rm -rf iTerm2.zip
 echo "iTerm2 successfully installed.. Adding colors.."
 
 cd ~/Downloads
-mkdir -p ${HOME}/iterm2-colours
-cd ${HOME}/iterm2-colours
-curl https://codeload.github.com/mbadolato/iTerm2-Color-Schemes/legacy.zip/master > iterm-colours.zip
-unzip iterm-colours.zip
-rm iterm-colours.zip
+mkdir -p ${HOME}/iterm2-colors
+cd ${HOME}/iterm2-colors
+curl https://codeload.github.com/mbadolato/iTerm2-Color-Schemes/legacy.zip/master > iterm-colors.zip
+unzip iterm-colors.zip
+rm iterm-colors.zip
 echo "iTerm2 + Colors installed"
 
 ## create global gitignore
