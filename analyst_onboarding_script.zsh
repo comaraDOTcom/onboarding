@@ -53,11 +53,11 @@ rm -rf iTerm2.zip
 echo "iTerm2 successfully installed.. Adding colors.."
 
 cd ~/Downloads
-mkdir -p ${HOME}/iterm2-colors
-cd ${HOME}/iterm2-colors
-curl https://github.com/mbadolato/iTerm2-Color-Schemes/zipball/master > iterm2-colors.zip
-unzip iterm2-colors.zip
-rm iterm2-colors.zip
+mkdir -p ${HOME}/iterm2-colours
+cd ${HOME}/iterm2-colours
+curl https://codeload.github.com/mbadolato/iTerm2-Color-Schemes/legacy.zip/master > iterm-colours.zip
+unzip iterm-colours.zip
+rm iterm-colours.zip
 echo "iTerm2 + Colors installed"
 
 ## create global gitignore
